@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacy Policy — Wealthy
 
-**Last updated:** November 3, 2026
+**Last updated:** November 12, 2026
 **Effective:** November 3, 2026
 
 ---
@@ -148,12 +148,15 @@ in to; the database refuses everything else. As the operator of the service, we
 have administrative access to the database.
 
 **Where it is kept.** Supabase stores the database on Amazon Web Services
-infrastructure in the region selected for Wealthy's project.
+infrastructure in the United States, in the West US (Oregon) region
+(us-west-2).
 
 **How long.** For as long as you have the account. Signing out removes your data
 from that device but leaves your account as it is, so signing in again restores
 it. To delete the account and everything in it, use Settings → Delete my data
-while signed in (section 9).
+while signed in (section 9). Wealthy's Supabase project is on a plan that does
+not include automatic database backups, so deleting your account does not leave
+a copy of it behind in a database backup.
 
 ## 4. Analytics (PostHog)
 
@@ -314,9 +317,12 @@ used to train its models.
   Anthropic fails, our server records only the type of error and a short
   description of it — never your messages, Penny's replies, or your profile
   summary.
-- We have not yet chosen the service that will host our server, so we cannot yet
-  tell you whether that service keeps its own record of requests, or for how
-  long. We will update this section once we have chosen one.
+- Our server is hosted on EAS Hosting, a service run by Expo, which runs on
+  Cloudflare Workers. EAS Hosting records basic details of each request it
+  handles (such as the time, the result, and how long it took), and keeps the
+  error records described above. We have not yet confirmed with Expo whether it
+  keeps any record of the content of requests, or for how long it keeps its
+  records. We will update this section once we have.
 - Anthropic does receive a copy of each request, as described above, and keeps
   it according to its own terms. The full conversation history stays on your
   device, and, if you have signed in, in your account (section 3.4).
