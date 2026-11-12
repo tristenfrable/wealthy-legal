@@ -14,8 +14,8 @@ permalink: /privacy/
 ## 1. Who we are
 
 Wealthy ("Wealthy", "we", "us") is a personal finance education app published by
-Tristen Frable, a sole proprietorship based in Oregon, United States, at
-2301 Melrose Rd, Roseburg, OR 97471.
+Wayne Ventures LLC, a limited liability company registered in Oregon, United
+States, at 2301 Melrose Rd, Roseburg, OR 97471.
 
 Questions about this policy or your data: **tristenwaynef@gmail.com**
 

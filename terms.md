@@ -6,16 +6,16 @@ permalink: /terms/
 
 # Terms of Service — Wealthy
 
-**Last updated:** October 6, 2026
+**Last updated:** November 12, 2026
 **Effective:** October 6, 2026
 
 ---
 
 ## 1. Agreement
 
-These Terms are between you and Tristen Frable, a sole proprietorship based in Oregon,
-United States ("Wealthy", "we", "us"). By downloading or using the Wealthy app,
-you agree to them. If you do not agree, do not use the app.
+These Terms are between you and Wayne Ventures LLC, a limited liability company
+registered in Oregon, United States ("Wealthy", "we", "us"). By downloading or
+using the Wealthy app, you agree to them. If you do not agree, do not use the app.
 
 ## 2. Eligibility
 
@@ -183,7 +183,7 @@ other liability that cannot lawfully be excluded.**
 
 ## 11. Indemnity
 
-You agree to indemnify and hold harmless Tristen Frable from claims arising out of
+You agree to indemnify and hold harmless Wayne Ventures LLC from claims arising out of
 your misuse of Wealthy or your breach of these Terms.
 
 ## 12. Termination
