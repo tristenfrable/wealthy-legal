@@ -1,0 +1,7 @@
+title: Wealthy
+description: Legal documents for the Wealthy app.
+# Primer is GitHub's own clean, minimal theme: plain readable text, no sidebar,
+# and it doesn't print the page title above the content, so each document's
+# own H1 isn't duplicated.
+theme: jekyll-theme-primer
+markdown: kramdown
