@@ -387,8 +387,9 @@ between apps and banks.
 ### 7.1 What happens when you connect
 
 You tap **Connect a bank** and Plaid's own screen opens inside the app. You
-choose your bank and sign in to it **through Plaid** — either on Plaid's screen
-or, for most larger banks, on your bank's own website. 
+choose your bank and sign in to it **through Plaid**, on Plaid's screen. Some
+banks instead ask you to sign in on their own website; those banks are not
+supported yet, and they do not appear in the list. 
 
 **Wealthy never sees, receives, or stores your bank username, password, or
 any security code.** Those go to Plaid and your bank, not to us. We could not
@@ -403,7 +404,7 @@ to your phone.
 For each account you connect:
 
 - the name of the institution;
-- the account's name, type, and last four digits;
+- the account's name, type, and the last few digits your bank exposes;
 - the current and available balance;
 - your transactions — for each one, the date, the amount, the merchant or
   description the bank provides, and the category Plaid assigns it.
