@@ -6,7 +6,7 @@ permalink: /terms/
 
 # Terms of Service — Wealthy
 
-**Last updated:** November 12, 2026
+**Last updated:** November 13, 2026
 **Effective:** October 6, 2026
 
 ---
@@ -67,10 +67,18 @@ not guarantees, and not a representation that any result will be achieved. Past
 performance does not indicate future results, and all investing involves risk of
 loss, including loss of principal.
 
-### 3.4 Your own figures
+### 3.4 Where the figures come from
 
-Every number in Wealthy is one you entered. We do not verify it, we do not connect
-to your bank, and we cannot tell you whether it is accurate.
+Figures you type in are not verified by us, and we cannot tell you whether they
+are accurate.
+
+You may also connect a bank account through **Plaid**, which is optional. When
+you do, balances and transactions are brought in automatically. That data comes
+from your bank by way of Plaid, read-only; we do not verify it, we cannot
+correct it, and we can never move money. If something is wrong or missing,
+that is between you and your bank. Connecting a bank is governed by Plaid's own
+terms and privacy policy as well as these Terms, and the Privacy Policy
+(section 7) explains exactly what we receive and what we never see.
 
 ## 4. Subscriptions
 
@@ -151,8 +159,10 @@ Content you enter remains yours.
 
 We may change, suspend, or discontinue any part of Wealthy at any time. We aim to
 keep it available but do not guarantee uninterrupted or error-free operation.
-Features that depend on third parties (Penny and subscription processing) can be
-unavailable for reasons outside our control.
+Features that depend on third parties (Penny, bank connections through Plaid,
+and subscription processing) can be unavailable for reasons outside our control.
+A bank may also change or end its connection with Plaid at any time, which can
+break a link you have set up.
 
 ## 9. Disclaimer of warranties
 

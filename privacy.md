@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacy Policy — Wealthy
 
-**Last updated:** November 12, 2026
+**Last updated:** November 13, 2026
 **Effective:** November 3, 2026
 
 ---
@@ -39,6 +39,12 @@ Questions about this policy or your data: **tristenwaynef@gmail.com**
   opened and which features are used, tied to a random identifier generated on
   your device, along with basic device and app information. Analytics never
   include money amounts and never include anything you or Penny typed.
+- **Connecting a bank is optional**, and Wealthy works fully without it. If you
+  connect one, you sign in to your bank through **Plaid**, never through us — we
+  never see your bank username or password. We receive your balances and
+  transactions, read-only. They are **never** sent to analytics, and they **are**
+  sent to Penny when you use her, so she can give advice about your actual
+  spending (sections 5 and 7).
 - **Penny is the exception, and it is an important one.** To answer you, your
   conversation and a short profile summary are sent to our server and on to
   Anthropic. Section 5 explains exactly what that includes.
@@ -276,6 +282,11 @@ reply, we must send your question somewhere.** It happens in two steps.
   reply, as stored on your device — including the new message
 - **A short profile summary**: your first name, your age, your stated monthly
   income, and the goals you selected during setup
+- **If you have connected a bank** (section 7): a summary of your recent
+  transactions and your current account balances. This includes, for each
+  transaction, its date, amount, the merchant or description your bank provides,
+  and its category — the same data described in section 7.2. Account numbers are
+  not included, because we never receive them.
 
 Because this request comes from your phone, our server and the service hosting it
 also receive your IP address. The request carries no identifier: not the
@@ -287,6 +298,7 @@ section 6.
 - **The most recent 40 messages** of that conversation (all of it, if it is
   shorter). Our server drops anything older before forwarding.
 - **The same profile summary**
+- **The same bank summary**, if you have connected a bank
 - Our own instructions to Penny, which are the same for everyone
 
 Anthropic receives the request from our server, not from your phone, so it does
@@ -296,10 +308,17 @@ This is not analytics and is not covered by the restrictions in section 4.2 —
 those apply to PostHog. It is the feature working as intended: Penny cannot give
 you a useful answer about your situation without knowing something about you.
 
-**That list is everything Penny receives.** She is not sent your budget, expenses,
-bills, savings goals, net worth, or check-in history. If you want her to take any
-of those into account, you have to tell her in a message — and whatever you type
-is then sent like any other message.
+**That list is everything Penny receives.** She is not sent your budget, bills,
+savings goals, net worth, check-in history, or any expense you typed in yourself.
+If you want her to take any of those into account, you have to tell her in a
+message — and whatever you type is then sent like any other message.
+
+**Bank data is the exception, and you control it.** If you have connected a bank,
+your transactions and balances are sent with every Penny message, because that is
+what lets her give advice about your real spending rather than generic advice. If
+you would rather Anthropic did not receive that, disconnect the bank (section 7.4)
+or do not use Penny. Disconnecting stops it immediately and deletes the data we
+hold; it does not reach copies Anthropic already has.
 
 **Your monthly income is included in that profile summary.** Setup requires a
 monthly income above zero, and the app has no way to change or remove your name,
@@ -356,15 +375,75 @@ Subscriptions are sold through the Apple App Store and managed with RevenueCat.
   events the app sends to analytics (section 4.1) carry no price, currency, or
   product identifier.
 
-## 7. Bank account connections
+## 7. Bank account connections (Plaid)
 
-**Wealthy does not connect to your bank.** The app has no bank-linking feature.
-Every figure in the app — income, expenses, bills, assets, liabilities — is one
-you typed in yourself, and none of it comes from a bank or any other outside
-source. Without an account, only your monthly income ever leaves your device: it
-is sent with every Penny message (section 5), and expenses, bills, assets, and
-liabilities are never sent anywhere. If you sign in, all of these figures are
-also stored in your account (section 3.4).
+**Connecting a bank is optional.** Wealthy works fully without it. Everything in
+section 3 still applies to figures you type in yourself.
+
+If you choose to connect a bank, Wealthy uses **Plaid Inc.** to make the
+connection. Plaid is a financial data company that handles the connection
+between apps and banks.
+
+### 7.1 What happens when you connect
+
+You tap **Connect a bank** and Plaid's own screen opens inside the app. You
+choose your bank and sign in to it **through Plaid** — either on Plaid's screen
+or, for most larger banks, on your bank's own website. 
+
+**Wealthy never sees, receives, or stores your bank username, password, or
+any security code.** Those go to Plaid and your bank, not to us. We could not
+show them to you if we wanted to, because they never reach us.
+
+When the connection succeeds, Plaid gives our server a key that lets us ask for
+your account data. That key is stored encrypted on our server and is never sent
+to your phone.
+
+### 7.2 What we receive and store
+
+For each account you connect:
+
+- the name of the institution;
+- the account's name, type, and last four digits;
+- the current and available balance;
+- your transactions — for each one, the date, the amount, the merchant or
+  description the bank provides, and the category Plaid assigns it.
+
+This is held in your account on Supabase (section 3.4), under the same
+protections, and is used to fill in your budget and expenses so you do not have
+to type them.
+
+We do not receive your full account number, and we never have the ability to
+move money. The connection is read-only.
+
+### 7.3 What is not done with it
+
+- Bank data is **never sent to PostHog**. Analytics never include money amounts
+  (section 4.2), and that applies to transactions exactly as it applies to
+  figures you type in.
+- Bank data is **never sold, licensed, or shared with data brokers**, and is
+  never used for advertising.
+- Bank data **is** sent to Penny when you use her, and therefore reaches
+  Anthropic. This is the point of the feature: Penny cannot give you useful
+  advice about your spending without seeing it. Section 5 sets out exactly what
+  is sent, and what you can do if you would rather it were not.
+
+### 7.4 Disconnecting
+
+**Settings → Linked accounts → Disconnect** ends the connection. When you
+disconnect, we tell Plaid to revoke the key for that institution and we delete
+the accounts and transactions we stored for it. The same thing happens for every
+connected institution when you use **Delete my data** (section 9).
+
+Disconnecting stops any further data reaching us. It does not reach data Plaid
+itself holds.
+
+### 7.5 Plaid's own handling of your data
+
+Once you are on Plaid's screen, Plaid is handling your information under its own
+privacy policy, not this one — including the bank credentials we never see.
+Read it at **https://plaid.com/legal/#end-user-privacy-policy**, and for
+requests about data Plaid holds, use the controls Plaid provides at
+**https://my.plaid.com**.
 
 ## 8. Children
 
@@ -395,6 +474,9 @@ kept, never the date itself.
   - It **erases everything Wealthy itself stores on your device**: your profile,
     budget, goals, net worth, check-in history, Penny conversations, feedback
     notes, and settings.
+  - It **disconnects every bank you have linked**: we tell Plaid to revoke the
+    key for each institution, and the accounts and transactions stored for them
+    are deleted (section 7.4).
   - It **cancels every reminder** the app has scheduled.
   - It **resets your analytics identifiers** — the app's and PostHog's own — so
     nothing the app sends to PostHog afterwards can be connected to anything it
@@ -457,8 +539,12 @@ storage area on your device, alongside the rest of your data. Supabase encrypts
 the database where it is stored, and the database itself only lets the app read
 or change the account it is signed in to.
 
+**Bank connections.** The key Plaid gives us for a connected bank is stored
+encrypted on our server and never sent to your phone. Your bank credentials
+never reach us at all (section 7.1).
+
 **In transit.** Every connection the app makes over the internet — to our
-server, Supabase, PostHog, and RevenueCat — is encrypted (HTTPS), and the app is set up so
+server, Supabase, PostHog, RevenueCat, and Plaid — is encrypted (HTTPS), and the app is set up so
 that your phone refuses to let it connect any other way. Our server's connection
 to Anthropic is also encrypted.
 
