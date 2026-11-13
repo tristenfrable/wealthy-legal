@@ -388,8 +388,9 @@ between apps and banks.
 
 You tap **Connect a bank** and Plaid's own screen opens inside the app. You
 choose your bank and sign in to it **through Plaid**, on Plaid's screen. Some
-banks instead ask you to sign in on their own website; those banks are not
-supported yet, and they do not appear in the list. 
+banks instead send you to their own website to sign in; those connections are
+not supported in this version, and if you pick one of those banks it will not
+complete. 
 
 **Wealthy never sees, receives, or stores your bank username, password, or
 any security code.** Those go to Plaid and your bank, not to us. We could not
