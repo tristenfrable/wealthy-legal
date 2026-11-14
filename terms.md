@@ -6,7 +6,7 @@ permalink: /terms/
 
 # Terms of Service — Wealthy
 
-**Last updated:** November 13, 2026
+**Last updated:** November 14, 2026
 **Effective:** October 6, 2026
 
 ---
@@ -19,9 +19,8 @@ using the Wealthy app, you agree to them. If you do not agree, do not use the ap
 
 ## 2. Eligibility
 
-You must be at least 13 years old to use Wealthy. If you are under 18, you may use
-it only with the involvement of a parent or guardian. By using Wealthy you confirm
-you meet these requirements.
+You must be at least 18 years old to use Wealthy. By using Wealthy you confirm
+you are 18 or older.
 
 ## 3. What Wealthy is — and is not
 
@@ -86,6 +85,16 @@ terms and privacy policy as well as these Terms, and the Privacy Policy
 
 Wealthy Premium unlocks full access to Penny and the app's premium tools. It costs
 **$10.00 USD per month**, billed to your Apple ID account.
+
+**Penny message limit.** Your subscription includes **up to 150 messages with Penny
+in each monthly billing period**. During the free trial, you can send **up to 40
+messages** in total. Each period runs from one renewal date to the next, not by
+calendar month, and your allowance resets when your subscription renews. Unused
+messages do not carry over. The limit applies to your Wealthy account, not to each
+device. Penny requires you to be signed in to a Wealthy account. When you reach the
+limit, you cannot send Penny more messages until the next period begins. The rest
+of the app keeps working, and your existing conversation stays available. The app
+shows how many messages you have left.
 
 ### 4.2 Free trial
 

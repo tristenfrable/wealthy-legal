@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacy Policy — Wealthy
 
-**Last updated:** November 13, 2026
+**Last updated:** November 14, 2026
 **Effective:** November 3, 2026
 
 ---
@@ -449,19 +449,18 @@ requests about data Plaid holds, use the controls Plaid provides at
 
 ## 8. Children
 
-Wealthy is not directed to children. **You must be at least 13 years old to use
-Wealthy**, and if you are under 18 you may only use it with the involvement of a
-parent or guardian.
+Wealthy is not directed to children or to anyone under 18. **You must be at
+least 18 years old to use Wealthy.**
 
-We do not knowingly collect personal information from anyone under 13. If we learn
-that we have, we will delete it. If you believe a child under 13 has used the app,
-contact us at **tristenwaynef@gmail.com**.
+We do not knowingly collect personal information from anyone under 18. If we
+learn that we have, we will delete it. If you believe someone under 18 has used
+the app, contact us at **tristenwaynef@gmail.com**.
 
 The app holds to this minimum. During setup it asks for your date of birth.
-If the date shows you are under 13, the app asks you to confirm it, and once
+If the date shows you are under 18, the app asks you to confirm it, and once
 confirmed it does not let you finish setting up. It remembers on your device only
 *that* setup was blocked — not your age and not your date of birth — so the
-question cannot simply be answered again. If you are 13 or over, only your age is
+question cannot simply be answered again. If you are 18 or over, only your age is
 kept, never the date itself.
 
 ## 9. Your choices and rights
