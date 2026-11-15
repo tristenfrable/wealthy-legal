@@ -21,10 +21,12 @@ Questions about this policy or your data: **tristenwaynef@gmail.com**
 
 ## 2. The short version
 
-- **An account is optional.** Wealthy works fully without one. If you choose to
-  sign in — with Apple, never a password of ours — your data is backed
-  up to your account so you can use it on more than one device (section 3.4).
-  Without an account, we never ask for an email address, phone number, or password.
+- **An account is needed for some features.** Budgeting, goals, net worth and
+  check-ins all work without signing in. **Penny and bank connections require an
+  account**, because both have to be tied to a person on our server. You sign in
+  with Apple, never a password of ours, and your data is then backed up to your
+  account so you can use it on more than one device (section 3.4). Until you sign
+  in, we never ask for an email address, phone number, or password.
 - During setup we do ask for your **first name, date of birth** (from which only
   your age is kept), **monthly income**, and **the goals you want to work on**.
   These are stored on your device and are sent with every Penny message
@@ -289,9 +291,15 @@ reply, we must send your question somewhere.** It happens in two steps.
   not included, because we never receive them.
 
 Because this request comes from your phone, our server and the service hosting it
-also receive your IP address. The request carries no identifier: not the
-analytics identifier from section 4, and not the RevenueCat identifier from
-section 6.
+also receive your IP address.
+
+**The request identifies you to our server.** Penny requires an account, and each
+message carries your sign-in token so the server knows whose it is. Our server
+needs this to count the message against your monthly allowance (section 6) and to
+find your connected bank data. It does **not** carry the analytics identifier from
+section 4 or the RevenueCat identifier from section 6, and your identity is not
+passed on to Anthropic — the request our server makes to Anthropic carries no
+account identifier.
 
 **From our server to Anthropic:**
 
