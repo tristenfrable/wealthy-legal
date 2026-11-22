@@ -84,7 +84,7 @@ terms and privacy policy as well as these Terms, and the Privacy Policy
 ### 4.1 What you are buying
 
 Wealthy Premium unlocks full access to Penny and the app's premium tools. It costs
-**$10.00 USD per month**, billed to your Apple ID account.
+**$9.99 USD per month**, billed to your Apple ID account.
 
 **Penny message limit.** Your subscription includes **up to 150 messages with Penny
 in each monthly billing period**. During the free trial, you can send **up to 40
