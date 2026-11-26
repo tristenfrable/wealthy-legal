@@ -119,8 +119,11 @@ The rest of this data stays on your device unless you sign in (3.4).
 ### 3.4 If you sign in: your account
 
 Signing in is optional, and you can do it at any time from Settings. Wealthy
-offers Sign in with Apple; we never see your Apple ID password. Accounts are run
-on Supabase, a database service provided by Supabase Inc.
+offers Sign in with Apple; we never see your Apple ID password. The sign-in
+screen also accepts an email address and password, for accounts we set up
+directly (such as a demo account for Apple's app review); the app has no way to
+create one. Accounts are run on Supabase, a database service provided by
+Supabase Inc.
 
 **What your account holds.** Once you sign in, the app keeps a copy of the
 following in your account and keeps it up to date as you make changes, so that
@@ -146,7 +149,9 @@ section 6), and the fact that setup was blocked by the age check.
   one.
 - Your name, if Apple shares it — Apple does this only the first time you sign
   in to Wealthy
-- That you signed in with Apple, a random account ID created for you, and
+- That you signed in with Apple (or, for an account we set up, with an email
+  address and password, which Supabase stores only as a secure hash), a random
+  account ID created for you, and
   when your account was created and when you last signed in
 - Your IP address whenever the app connects, as any internet service sees it.
   Supabase records it in its sign-in logs.
@@ -234,7 +239,7 @@ the app cannot record anything that isn't on it:
 | You are asked to rate the app, and how you answer | what prompted the request (a 30-day streak, a completed goal, or five Penny messages in one session), and, if the request wasn't shown, why — never any feedback you type |
 | You start, finish, or skip the in-app tips | which screen's tips, how many there are, and if you skipped, how far you got |
 | You accept Penny's disclaimer | which disclaimer |
-| You sign in, or a sign-in fails | that it was Sign in with Apple, and if it failed, an error code — never your email address or account ID |
+| You sign in, or a sign-in fails | whether it was Sign in with Apple or email and password, and if it failed, an error code — never your email address or account ID |
 | You choose not to sign in when offered | where you were offered it |
 | You sign out | that it was Sign in with Apple |
 | You delete your account | nothing else |
