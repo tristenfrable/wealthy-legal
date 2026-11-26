@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacy Policy — Wealthy
 
-**Last updated:** November 14, 2026
+**Last updated:** November 26, 2026
 **Effective:** November 3, 2026
 
 ---
@@ -165,6 +165,21 @@ it. To delete the account and everything in it, use Settings → Delete my data
 while signed in (section 9). Wealthy's Supabase project is on a plan that does
 not include automatic database backups, so deleting your account does not leave
 a copy of it behind in a database backup.
+
+### 3.5 The home screen widget (iPhone)
+
+If you add the Wealthy widget to your home screen, the app saves two numbers
+where the widget can read them: your daily limit and the total you have spent
+today (from your linked bank if you have one, otherwise from the expenses you
+entered). Nothing else is shared with the widget: no expenses, merchants,
+account names, or balances. These numbers stay on your phone, are never sent
+anywhere, and are removed when you delete your data, sign out, or uninstall the
+app. They are also removed if your trial or subscription ends.
+
+The widget shows these amounts on your home screen, where anyone who can see your
+phone can see them. They are marked as sensitive, so iOS can hide them when the
+widget is shown while your phone is locked, for example in StandBy. To remove the
+widget, touch and hold it.
 
 ## 4. Analytics (PostHog)
 
